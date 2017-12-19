@@ -20,10 +20,5 @@ class AnimalController extends Controller
         $response = \Httpful\Request::get($uri)->send();
 
         echo 'Er zijn ' . count($response->body) . " dieren in de database.";
-
-        foreach($response->body as $animal)
-        {
-            echo $animal->name . " ";
-        }
     }
 }
