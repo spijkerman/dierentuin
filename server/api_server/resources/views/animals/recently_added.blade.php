@@ -20,7 +20,7 @@
         <tbody>
         @foreach($objects as $object)
             <tr>
-                <td>{{$object->name}}</td>
+                <td>{{$object->name}} ({{$object->id}})</td>
                 <td>{{$object->animalType->name}} ({{$object->animalType->id}})</td>
                 <td>{{$object->zoo->name}} ({{$object->zoo_id}})</td>
                 <td>{{$object->created_at}}</td>
