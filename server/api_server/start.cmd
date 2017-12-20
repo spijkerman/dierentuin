@@ -1,9 +1,10 @@
 @echo off
 
-php artisan key:generate
-
 composer install
 
+php artisan key:generate
+
+enable pdo_mysql in php.ini
 php artisan migrate
 
 php artisan db:seed
