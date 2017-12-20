@@ -1,0 +1,5 @@
+1) Maak een lege database aan.
+2) Prepareer .env file.
+(Pas DB properties in .env aan op de database die je net gemaakt hebt.)
+3) Execute start.cmd
+(Deze genereert een APP_KEY in .env, installeert composer dependencies, voert de migraties uit op de zojuist gecreerde database, vult deze vervolgens met data en start als laatste de php server.)
